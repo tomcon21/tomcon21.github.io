@@ -3,18 +3,12 @@
 <script src="jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-   $.ajax({
-        url:'https://tomcon21.github.io/hello.php',
-        type:'GET',
-       success:function(data)
-       {
-             alert(data);
-           }
-    });
+   $.get('https://tomcon21.github.io/hello.php', function(data) {
+  // use the result
+  alert(data);
 });
 </script>
 </head>
 <body>
-<div id="thisdiv"></div>
 </body>
 </html>
