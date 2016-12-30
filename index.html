@@ -1,1 +1,20 @@
-<p>Test</p>
+<html>
+<head>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $.ajax({
+        url:'test.php',
+        type:'GET',
+       success:function(data)
+       {
+              $("#thisdiv").html(data);
+           }
+    });
+});
+</script>
+</head>
+<body>
+<div id="thisdiv"></div>
+</body>
+</html>
